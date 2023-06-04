@@ -1,0 +1,2 @@
+
+${AnsiBackground.BRIGHT_YELLOW}${AnsiStyle.BOLD}${AnsiColor.BRIGHT_BLACK} :: MUQ SECURITY JWT 1.0.0  SPRING BOOT ${spring-boot.version} :: ${AnsiStyle.NORMAL}
