@@ -26,8 +26,8 @@ import java.util.List;
  */
 @Slf4j
 @Configuration
-@EnableWebSecurity
-@EnableMethodSecurity
+@EnableWebSecurity      // 启用 Spring Security
+@EnableMethodSecurity   // 启用方法级别安全
 @RequiredArgsConstructor
 public class SecurityConfiguration {
 

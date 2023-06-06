@@ -16,10 +16,10 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         // 查询用户信息和权限并返回一个UserDetails的实现，为了简单，这里使用预设一个固定用户
         // ... 查询操作
-        return User.builder()
-                .username("admin")
+        if (username.equals("admin")) return User.withUsername("admin")
                 .password(new BCryptPasswordEncoder().encode("123456"))
                 .authorities("test:read", "test:write")
                 .build();
+        throw new UsernameNotFoundException("用户不存在");
     }
 }

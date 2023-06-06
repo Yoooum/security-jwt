@@ -1,7 +1,6 @@
 package com.prprv.token.exception;
 
 import com.prprv.token.common.R;
-import org.springframework.http.ResponseEntity;
 
 /**
  * @author Yoooum

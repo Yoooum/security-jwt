@@ -1,12 +1,20 @@
+server:
+  port: 8080
 token: # 密钥，用于生成令牌
-  secret: 你说的对，但是《Java》是由Sun公司自主研发的一种计算机高级编程语言。游戏发生在一个被称作「地球」的魔幻世界，在这里，被资本家选中的人将被授予「电脑」，导引996之力。你将扮演一位名为「牛马」的神秘角色，在阶级固化的世界中邂逅性格各异、能力独特的卷狗工贼们，和他们一起相爱相杀，找回他们dinner的脑子——同时，逐步发掘「程序员」的真相。
+  secret: |
+    -----BEGIN PRIVATE KEY-----
+      你说的对，但是《Java》是由Sun公司自主研发的一种计算机高级编程语言。游戏发生在一
+    个被称作「地球」的魔幻世界，在这里，被资本家选中的人将被授予「电脑」，导引996之力。
+    你将扮演一位名为「牛马」的神秘角色，在阶级固化的世界中邂逅性格各异、能力独特的卷狗工
+    贼们，和他们一起相爱相杀，找回他们dinner的脑子——同时，逐步发掘「程序员」的真相。
+    -----END PRIVATE KEY-----
   ttl: # 令牌有效时间: 秒
     access-token: 999
     refresh-token: 9999
 
-springdoc:
+springdoc: # Swagger扫描路径
   group-configs:
     - group: 'default'
       paths-to-match: '/**'
       packages-to-scan:
-        - com.prprv.token.web
+        - 'com.prprv.token.web'

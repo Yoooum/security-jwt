@@ -39,7 +39,7 @@ public class TokenProvider {
     }
 
     /**
-     * 密钥实例
+     * 返回一个密钥实例，基于 HMAC-SHA 算法
      */
     private Key secretKey() {
         return Keys.hmacShaKeyFor(SECRET_KEY.getBytes());
